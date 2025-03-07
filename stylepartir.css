@@ -1,0 +1,411 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    box-sizing: border-box;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header {
+    background: url('./images/partir.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 0;
+    height: 900px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.france {
+    padding-bottom: 8em;
+    padding-right: 300px;
+    font-style: italic;
+}
+
+.logooo {
+    padding-bottom: 10em;
+    width: 150px;
+    height: 120px;
+}
+
+nav ul {
+    list-style: none;
+    font-weight: bold;
+    display: flex;
+    padding-right: 180px;
+    gap: 5rem;
+    font-size: 20px;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 5rem;
+}
+
+button {
+    background: transparent;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.74);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.search-dropdown {
+    position: relative;
+    min-width: 220px;
+}
+
+.search-dropdown select {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.search-dropdown::after {
+    content: "⌄";
+    font-size: 12px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.search-button {
+    padding: 15px 25px;
+    background-color: #0077BE;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    min-width: 220px;
+}
+
+.search-button:hover {
+    background-color: #005B8E;
+}
+
+@media (max-width: 768px) {
+    .search-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .search-dropdown, .search-button {
+        width: 100%;
+    }
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    background: #e5effc;
+    padding: 30px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.carte {
+    text-align: center;
+    max-width: 250px;
+}
+
+.carte img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.separation {
+    align-items: center;
+    background: #f5f5f5;
+    width: 300px;
+    
+}
+
+.separation2 {
+    margin-top: 4em;
+    align-items: center;
+    background: #f5f5f5;
+    width: 300px;
+}
+
+h3 {
+    color: #2364aa;
+    font-size: 1.1em;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: white;
+    border: 2px solid #2364aa;
+    color: #2364aa;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2364aa;
+    color: white;
+}
+
+.programmes {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #f5f5f5;
+}
+
+.proh1 {
+    font-size: 3rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.card img {
+    width: 250px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.more {
+    display: inline-block;
+    margin-top: 2rem;
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bourses {
+    padding: 3rem 2rem;
+    background: url('./imagess/bourse.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+}
+
+.sep{
+    color: white;
+}
+
+.education {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 4rem 2rem;
+    text-align: start;
+    padding-left: 10rem;
+}
+
+.titre {
+    font-family: 'AmaticSC', sans-serif;
+    color: #0073BC;
+}
+
+@font-face {
+    font-family: 'AmaticSC';
+    src: url('./font/AmaticSC.ttf') format('truetype');
+}
+
+.groupe {
+    padding-left: 10em;
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .education {
+        padding-left: 2rem;
+    }
+
+    .groupe {
+        padding-left: 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .france {
+        padding-right: 0;
+    }
+
+    .logooo {
+        padding-bottom: 0;
+    }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.social-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer {
+    background-color: #f2f2f2;
+    padding: 40px 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 30px;
+}
+
+.footer-section:last-child {
+    margin-right: 0;
+}
+
+.footer-title {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.footer-link {
+    color: #1e88e5;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #e0e0e0;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+}
+
+.footer-bottom-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-bottom-link {
+    color: #1e88e5;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-bottom-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+    .cards {
+        flex-direction: column;
+    }
+    .footer-content {
+        flex-direction: column;
+    }
+    
+    .footer-section {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}
